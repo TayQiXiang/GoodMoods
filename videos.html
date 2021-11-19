@@ -28,12 +28,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-  <!-- Survey-->
- 	<link href="https://unpkg.com/survey-jquery@1.8.21/modern.css" type="text/css" rel="stylesheet" />
-
   <!-- =======================================================
   * Template Name: Moderna - v4.7.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -57,9 +51,9 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a class="active " href="screening_test.html">Screening Test</a></li>
+          <li><a href="screening_test.html">Screening Test</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="videos.html">Videos</a></li>
+          <li><a class="active"href="videos.html">Videos</a></li>
           
           <li><a href="blog.html">Blog</a></li>
           
@@ -71,108 +65,105 @@
     </div>
   </header><!-- End Header -->
 
+
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
+    <!-- ======= Our Portfolio Section ======= -->
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Screening Test</h2>
+          <h2>Our Videos</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Screening test</li>
+            <li>Our Videos</li>
           </ol>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section><!-- End Our Portfolio Section -->
 
-    <!-- ======= About Section ======= -->
-    <section class="about" data-aos="fade-up">
+    <!-- ======= Portfolio Section ======= -->
+    <section class="portfolio">
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/mental_health.png" class="img-fluid" style="width: 100%;"alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 align-middle">
-            <h3>Participate in our quick 5 minutes survey form to better understand your mental health.</h3>
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-stress">Stress</li>
+              <li data-filter=".filter-anxiety">Anxiety</li>
+              <li data-filter=".filter-psychotherapy">Psychotherapy</li>
+            </ul>
           </div>
         </div>
 
-      </div>
-    </section><!-- End About Section -->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <!-- ======= Facts Section ======= -->
-    <section class="facts section-bg" data-aos="fade-up">
-      <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
-            <p>People taken this test</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Questions</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Time to complete(mins)</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1" class="purecounter"></span>
-            <p>People benefited</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-        <!-- ======= Survey Section ======= -->
-        <section class="about">
-          <div class="container">
-
-            <div class="row">
-              <div class="col-lg-12 text-center">
-                <div class=container">
-                  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#surveyModal">
-                    Launch survey
-                  </button>
-                  <div class="modal fade" id="surveyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-                      <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="surveyModalTitle">Mental Health Survey</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div id="surveyContainer"></div>
-                      </div>
-                      </div>
-                    </div>
-                    </div>
-
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-stress">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/oxx564hMBUI" allowfullscreen></iframe>
               </div>
-              
-            </div>
-    
           </div>
-        </section>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-stress">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/oxx564hMBUI" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-stress">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/oxx564hMBUI" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-anxiety">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/XFTXKqRujxk" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-anxiety">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/XFTXKqRujxk" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-anxiety">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/XFTXKqRujxk" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-psychotherapy">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/OxuZiqY5ypU" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-psychotherapy">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/OxuZiqY5ypU" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-psychotherapy">
+            <div class="video_container">
+                <iframe class ="responsive-iframe" src="https://www.youtube.com/embed/OxuZiqY5ypU" allowfullscreen></iframe>
+              </div>
+          </div>
           
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+   <!-- ======= Footer ======= -->
+   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -244,15 +235,8 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/survey-jquery@1.8.21/survey.jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/survey-jquery@1.8.78/survey.jquery.min.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -266,23 +250,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-  Survey.StylesManager.applyTheme("modern");
-
-  var surveyJSON = {"title":"Emotional wellbeing profiling","description":"To test your stress level.","pages":[{"name":"page1","elements":[{"type":"rating","name":"question1","title":"Do you fell stress?","isRequired":true},{"type":"rating","name":"question2","title":"Do you fell that life is meaningless?"}],"description":"1 - Most Disagree; 5 - Most Agree"}]}
-
-  function sendDataToServer(survey) {
-    //send Ajax request to your web server.
-    alert("The results are:" + JSON.stringify(survey.data));
-  }
-
-  var survey = new Survey.Model(surveyJSON);
-  $("#surveyContainer").Survey({
-    model: survey,
-    onComplete: sendDataToServer
-  });
-  </script>
 
 </body>
 

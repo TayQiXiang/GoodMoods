@@ -27,7 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="assets/js/email.js"></script>
   <!-- =======================================================
   * Template Name: Moderna - v4.7.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -51,28 +51,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="index.html">Home</a></li>
-          <li><a href="screening_test.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
+          <li><a href="screening_test.html">Screening Test</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+          
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -134,7 +118,7 @@
           <div class="col-xs-12 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx bx-dock-top"></i></div>
-              <h4 class="title"><a href="">Emotional Wellbeing Profiling</a></h4>
+              <h4 class="title"><a href="screening_test.html">Emotional Wellbeing Profiling</a></h4>
               <p class="description">Take our quick survey to find out your stress level. Prevention is better than cure!</p>
             </div>
           </div>
@@ -142,7 +126,7 @@
           <div class="col-xs-12 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-calendar"></i></div>
-              <h4 class="title"><a href="">Book a time</a></h4>
+              <h4 class="title"><a href="schedule.html">Book a time</a></h4>
               <p class="description">Book a time with our counsellors and seek mental advices</p>
             </div>
           </div>
@@ -150,7 +134,7 @@
           <div class="col-xs-12 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxl-youtube"></i></div>
-              <h4 class="title"><a href="">Therapeutic videos</a></h4>
+              <h4 class="title"><a href="videos.html">Therapeutic videos</a></h4>
               <p class="description">Watch recommended Youtube Videos to better understand your feelings</p>
             </div>
           </div>
@@ -158,7 +142,7 @@
           <div class="col-xs-12 col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-mail-send"></i></div>
-              <h4 class="title"><a href="">Subscribe to newsletter</a></h4>
+              <h4 class="title"><a href="#footer">Subscribe to newsletter</a></h4>
               <p class="description">Subscribe to our newsletter on more information. Don't miss out on any new updates !</p>
             </div>
           </div>
@@ -175,8 +159,7 @@
         <div class="row">
           <div class="col-lg-6 video-box">
             <div class="iframe-container">
-              <iframe src="https://www.youtube.com/embed/oxx564hMBUI">
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/oxx564hMBUI" allowfullscreen></iframe>
             </div>
             
             <!-- <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
@@ -301,7 +284,14 @@
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <div class="row">
+                <div class="col-9">
+                  <input type="email" class="form-control" id="myInput" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary" onclick="getInputValue()">Subscribe</button>
+              </div>
+
             </form>
           </div>
         </div>
@@ -318,30 +308,17 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
             </ul>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
-
-          <div class="col-lg-3 col-md-6 footer-contact">
+                  <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
               FSKTM <br>
               University Malaya<br>
               Malaya <br><br>
               <strong>Phone:</strong> +6012 3456789<br>
-              <strong>Email:</strong> info@goodmoods.com<br>  
+              <strong>Email:</strong> goodmoodswix2002@gmail.com<br>  
             </p>
 
           </div>
@@ -349,12 +326,6 @@
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About GoodMoods</h3>
             <p>This is an web app created by a group of students for WIX 2002.</p>
-            <!-- <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div> -->
           </div>
 
         </div>
@@ -389,6 +360,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Email-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 
