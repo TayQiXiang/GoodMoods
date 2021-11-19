@@ -1,5 +1,6 @@
 # WIX 2002 Project Management
-This is a group project for the WIX 2002 course.
+This is a group project for the WIX 2002 course. This website is only for assignment purpose.
+
 Group Members:
 1. Frankie Lim Qi Quan
 2. Tay Qi Xiang
