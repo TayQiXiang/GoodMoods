@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0P316P41FY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0P316P41FY');
+</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -27,7 +35,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="assets/js/email.js"></script>
   <!-- =======================================================
   * Template Name: Moderna - v4.7.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -140,8 +148,14 @@
             </div>
             <div class="col-lg-6">
               <form action="" method="post">
-                <input type="email" name="email"><input type="submit" value="Subscribe">
-              </form>
+                <div class="row">
+                  <div class="col-9">
+                    <input type="email" class="form-control" id="myInput" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="col-3">
+                    <button type="button" class="btn btn-primary" onclick="getInputValue()">Subscribe</button>
+                </div>
+                 </form>
             </div>
           </div>
         </div>
@@ -155,8 +169,8 @@
               <h4>Useful Links</h4>
               <ul>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="contact.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="screening_test.html">Services</a></li>
               </ul>
             </div>
   
@@ -209,7 +223,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<!-- Email-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

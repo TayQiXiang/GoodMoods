@@ -6,7 +6,7 @@ function sendEmail(email) {
     To: email,
     From: "goodmoodswix2002@gmail.com",
     Subject: "Welcome to GoodMoods",
-    Body: "Hi!!",
+    Body: "Welcome!!!<br>You have successfully registered with GoodMoods. <br>We will update you with all the latest news and updates. <br>Thank you for being a part of GoodMoods.",
     // Attachments: [
     //   {
     //     name: "File_Name_with_Extension",
